@@ -47,7 +47,6 @@ void fun()
 
 int main() 
 {
-
   ::count = 12;       // 测试 1：设置全局的 count 的值为 12
   MyTest::count = 22; // 测试 2：设置类 A 的 count 为 22
   fun();		          // 测试 3

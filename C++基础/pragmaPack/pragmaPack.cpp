@@ -29,18 +29,18 @@
 
 struct test
 {
-    char m1;
-    double m4;
-    int m3;
+  char m1;
+  double m4;
+  int m3;
 };
 
 #pragma pack(pop)   // 恢复对齐状态
 
 struct test1
 {
-    char m1;
-    double m4;
-    int m3;
+  char m1;
+  double m4;
+  int m3;
 };
 
 int main()
