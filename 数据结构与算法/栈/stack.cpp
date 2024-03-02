@@ -69,15 +69,24 @@ bool isValid(std::string s)
   return str_stack.empty();
 }
 
+// 235 栈实现队列
+
+
+
 int main()
 {
   std::string str = "({[]})";
   std::string str1 = "([[]})";
   
-  if(isValid(str1))
-    std::cout << "true" << std::endl;
-  else 
-    std::cout << "false" << std::endl;
+  // if(isValid(str1))
+  //   std::cout << "true" << std::endl;
+  // else 
+  //   std::cout << "false" << std::endl;
+
+
+  // 栈实现队列
+
+
 
   return 0;
 }
