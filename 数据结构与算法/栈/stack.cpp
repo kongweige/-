@@ -70,23 +70,79 @@ bool isValid(std::string s)
 }
 
 // 235 栈实现队列
+class MyQueue
+{
+public:
+  MyQueue() { }
+  ~MyQueue() { }
+    
+  void push(int value);
+    
+  int pop();
+    
+  int peek();
+    
+  bool empty();
+private:
+  std::stack<int> data_;
+};
 
+void MyQueue::push(int value)
+{
+  std::stack<int> temp_stk;
+  while(!data_.empty())
+  {
+    temp_stk.push(data_.top());
+    data_.pop();
+  }
+  
+  temp_stk.push(value);
+ 
+  while(!temp_stk.empty())
+  {
+    data_.push(temp_stk.top());
+    temp_stk.pop();
+  }
+}
+   
+int MyQueue::pop()
+{
+  int val = data_.top();
+  data_.pop();
+  return val;
+}
 
+int MyQueue::peek()
+{
+  return data_.top();
+}   
+
+bool MyQueue::empty()
+{
+  return data_.empty();
+}
 
 int main()
 {
   std::string str = "({[]})";
   std::string str1 = "([[]})";
   
-  // if(isValid(str1))
-  //   std::cout << "true" << std::endl;
-  // else 
-  //   std::cout << "false" << std::endl;
+  if(isValid(str1))
+    std::cout << "true" << std::endl;
+  else 
+    std::cout << "false" << std::endl;
 
 
   // 栈实现队列
+  MyQueue my_queue;
 
+  my_queue.push(1); 
+  my_queue.push(2); 
+  std::cout << my_queue.peek() << std::endl;
+  std::cout << my_queue.pop() << std::endl ; 
 
+  std::string res = (my_queue.empty() == 1) ? "True" : "Fasle";
+  std::cout << res << std::endl; 
 
   return 0;
 }

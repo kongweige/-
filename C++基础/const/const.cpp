@@ -3,10 +3,10 @@
 class MyConst
 {
 public:
-  MyConst() {};
-  ~MyConst() {};
+  MyConst() {}
+  ~MyConst() {}
 
-  // const ¿ÉÒÔÖØÔØ£¬const²»¿ÉÒÔ¸Ä±äÀàÄÚÊı¾İ³ÉÔ±
+  // const ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½constï¿½ï¿½ï¿½ï¿½ï¿½Ô¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ³ï¿½Ô±
   inline std::string OutFunction() {std::cout << "out func "; return const_member_var; }
 
   inline std::string OutFunction() const { std::cout << "const out func "; return const_member_var; }
@@ -16,40 +16,40 @@ private:
 
 };
 
-// º¯Êı
-// &Ö»´«µİ±ğÃû£¬·ÀÖ¹ÁË¿½±´¡£const·ÀÖ¹´«µİµÄÊı¾İ±»¸Ä±ä 
+// ï¿½ï¿½ï¿½ï¿½
+// &Ö»ï¿½ï¿½ï¿½İ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½Ë¿ï¿½ï¿½ï¿½ï¿½ï¿½constï¿½ï¿½Ö¹ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½İ±ï¿½ï¿½Ä±ï¿½ 
 void function3(const std::string& var);
 
 int main()
 {
   std::cout << "const cpp" << std::endl;
-  // Àà¶ÔÏó
-  MyConst my_const;          // constÓë·Çconst¶¼¿ÉÒÔµ÷ÓÃ
-  const MyConst my_const_1;  // ³£¶ÔÏó Ö»ÄÜµ÷ÓÃconst³ÉÔ±
-  const MyConst *my_const_2 = &my_const_1; // Ö¸Õë±äÁ¿ Ö¸Ïò³£¶ÔÏó
-  const MyConst &my_const_3 = my_const_1;  // Ö¸Ïò³£¶ÔÏóµÄ& 
+  // ï¿½ï¿½ï¿½ï¿½ï¿½
+  MyConst my_const;          // constï¿½ï¿½ï¿½constï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½
+  const MyConst my_const_1;  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ö»ï¿½Üµï¿½ï¿½ï¿½constï¿½ï¿½Ô±
+  const MyConst *my_const_2 = &my_const_1; // Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ò³£¶ï¿½ï¿½ï¿½
+  const MyConst &my_const_3 = my_const_1;  // Ö¸ï¿½ò³£¶ï¿½ï¿½ï¿½ï¿½& 
  
   std::cout << "???????: " << my_const.OutFunction() << std::endl;
   std::cout << "??????: " << my_const_1.OutFunction() << std::endl;
   std::cout << "??????: " << my_const_2->OutFunction() << std::endl;
   std::cout << "??????: " << my_const_3.OutFunction() << std::endl;
 
-  // Ö¸Õë
+  // Ö¸ï¿½ï¿½
   char ptr_varibale[] = "Hello World"; 
   char ptr_varibale_1[] = "World"; 
 
-  // ³£Á¿
+  // ï¿½ï¿½ï¿½ï¿½
   const int variable = 1;
-  std::cout << "???¦Á??? ????????? " << variable << std::endl;
+  std::cout << "???ï¿½ï¿½??? ????????? " << variable << std::endl;
 
-  // Ö¸Õë
-  // Ö¸Õë³£Á¿
+  // Ö¸ï¿½ï¿½
+  // Ö¸ï¿½ë³£ï¿½ï¿½
   const char* ptr_const = ptr_varibale;
-  std::cout << "Ö¸Õë³£Á¿ Ö¸ÕëÖ¸ÏòµÄÖµ²»ÄÜ±ä Ö¸Õë¿ÉÒÔÖ¸ÏòÆäËûµØÖ· " << *ptr_const << std::endl;
+  std::cout << "Ö¸ï¿½ë³£ï¿½ï¿½ Ö¸ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ü±ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö· " << *ptr_const << std::endl;
   
-  // ³£Á¿Ö¸Õë
+  // ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½
   char *const const_ptr = ptr_varibale; 
-  std::cout << "³£Á¿Ö¸Õë Ö¸ÕëµÄÖ¸Ïò²»ÄÜ±ä µ«ÊÇÖ¸ÕëÖ¸ÏòµÄÖµ¿ÉÒÔÍ¨¹ı½âÒıÓÃ¸Ä±ä" << *const_ptr << std::endl;
+  std::cout << "ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ü±ï¿½ ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸Ä±ï¿½" << *const_ptr << std::endl;
   *const_ptr = *ptr_varibale_1;
   std::cout << "??????? ??????????? ????????????????????" << *const_ptr << std::endl;
   std::cout << "??????? ??????????? ????????????????????" << *ptr_varibale << std::endl;

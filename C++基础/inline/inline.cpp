@@ -3,8 +3,8 @@
 class MyClass
 {
 public:
-  MyClass(){};
-  virtual ~MyClass(){};
+  MyClass(){}
+  virtual ~MyClass(){}
 
   // ����Ĭ����ʽ��������
   int rturnValue() { return value; }
@@ -23,7 +23,7 @@ private:
 class SunClass
 {
 public:
-  SunClass(){};
+  SunClass(){}
   
 };
 

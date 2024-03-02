@@ -8,9 +8,9 @@ public:
   // 优点：
   // 无需考虑类是否被初始化
   // 经过构造函数完全初始化后的对象可以为const 类型，也能更方便被标准容器或算法使用
-  Language() { };
-  Language(std::string name,int age) : name_(name),age_(age) {  };
-  ~Language() { };
+  Language() { }
+  Language(std::string name,int age) : name_(name),age_(age) {  }
+  ~Language() { }
 
   void setName(std::string name);
   void setAge(int age);

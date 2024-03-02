@@ -19,8 +19,8 @@
 class MyStack
 {
 public:
-  MyStack() { };
-  ~MyStack() { };
+  MyStack() { }
+  ~MyStack() { }
 
   void push(int value);
 

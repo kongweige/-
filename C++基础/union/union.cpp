@@ -15,7 +15,7 @@
 
 union Union
 {
-  Union() : i(10) {};
+  Union() : i(10) {}
   int i;
   double d;
   // int& ref; // 引用类型成员
@@ -30,7 +30,7 @@ static union {
 // 即使你的 Union 类型没有任何成员变量，C++ 编译器也会为其分配至少一个字节的内存空间，以确保每个对象都有一个唯一的地址。
 // union Union
 // {
-//   Union() {};
+//   Union() {}
 // };
 
 union test
