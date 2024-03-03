@@ -57,6 +57,10 @@
         "deque": "cpp",
         "ranges": "cpp",
         "span": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp",
+        "queue": "cpp",
+        "xstddef": "cpp"
     }
 }
