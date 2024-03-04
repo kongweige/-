@@ -70,6 +70,33 @@ bool MyStack::empty()
   return data_.empty(); // 如果队列为空则返回1，否则返回0。
 }
 
+// 239 移动滑动窗口
+std::vector<int> maxSlidingWindow(std::vector<int>& nums, int k) 
+{
+  int n = nums.size();
+  std::priority_queue<std::pair<int,int>> q;
+  std::vector<int> ans;
+  for(int i = 0; i< k;++i)
+  {
+    q.emplace(nums[i],i);
+  }
+
+  ans.push_back(q.top().first);
+
+  for(int i = k;i < n;++i)
+  {
+    q.emplace(nums[i],i);
+    while (q.top().second <= i-k)
+    {
+      q.pop();
+    }
+    
+    ans.push_back(q.top().first);
+  }
+
+  return ans;
+}
+
 int main()
 {
   MyStack my_stack;
@@ -82,5 +109,8 @@ int main()
   std::string res = (my_stack.empty() == 1) ? "True" : "Fasle";
   std::cout << res << std::endl; // 返回 False
  
+  std::vector<int> nums = {1,3,-1,-3,5,3,6,7};
+  std::vector<int>aa = maxSlidingWindow(nums,3);
+
   return 0;
 }
