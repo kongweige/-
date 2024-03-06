@@ -61,6 +61,10 @@
         "algorithm": "cpp",
         "string": "cpp",
         "queue": "cpp",
-        "xstddef": "cpp"
+        "xstddef": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "functional": "cpp",
+        "xhash": "cpp"
     }
 }
