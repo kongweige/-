@@ -58,7 +58,7 @@ chage [options] username
 
 ## 文件权限
 
-![image-20240308210744263](..\..\Images\image-20240308210744263.png)
+![image-20240308210744263](../../Images/image-20240308210744263.png)
 
 **类型：**
 
