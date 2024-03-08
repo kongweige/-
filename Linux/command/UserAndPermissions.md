@@ -82,9 +82,7 @@ chage [options] username
 
 `x `：进入目录	`rx`：显示目录内的文件名	`wx`：修改目录内的文件名
 
-![image-20240308211900593](..\..\Images\image-20240308211900593.png)
-
-
+![image-20240308211900593](../../Images/image-20240308211900593.png)
 
 ### chmod
 
