@@ -30,11 +30,11 @@ man 5 passwd
 man -a passwd
 ```
 
-## hellp
+## help
 
 ### 介绍
 
-**hellp: 主要用于显示bash shell内置命令的帮助信息**
+**help: 主要用于显示bash shell内置命令的帮助信息**
 
 ### 使用
 
