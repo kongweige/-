@@ -2,6 +2,7 @@
 // unordered_multiset：存储的元素可以重复，每个元素在集合中可以出现多次
 // unordered_map：存储的键是唯一的，每个键对应一个值，因此每个键只能在 unordered_map 中出现一次
 // unordered_multimap：允许存储多个具有相同键的键值对，即每个键可以对应多个值，因此键在 unordered_multimap 中可以重复出现
+// 插入、删除、查找 O(1) 发生哈希冲突最差 O(n) 无序
 #include <iostream>
 
 #if 0
