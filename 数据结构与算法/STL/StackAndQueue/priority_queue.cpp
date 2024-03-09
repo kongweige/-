@@ -1,4 +1,4 @@
-// priority_queue优先队列，底层是由堆实现，分为最大堆和最小堆，默认是最大堆
+// priority_queue优先队列，底层是由以vector作为底层容器，以heap作为处理规则，heap的本质是一个完全二叉树
 
 #include <iostream>
 #include <queue>
