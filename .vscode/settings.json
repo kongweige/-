@@ -65,6 +65,7 @@
         "list": "cpp",
         "unordered_map": "cpp",
         "functional": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "forward_list": "cpp"
     }
 }
