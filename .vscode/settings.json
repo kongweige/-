@@ -69,6 +69,7 @@
         "forward_list": "cpp",
         "xtree": "cpp",
         "set": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "unordered_set": "cpp"
     }
 }
