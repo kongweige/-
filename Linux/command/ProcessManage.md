@@ -19,6 +19,12 @@ ps -e
 
 分页查看
 ps -e | more
+
+所有进程的详细信息，包括其他用户的进程以及没有控制终端的进程。
+ps -aux
+
+查看系统中正在运行的进程的详细信息的有用工具
+ps -ef
 ```
 
 ### pstree
@@ -50,8 +56,11 @@ pstree | more
 - `used` 多少内存正在使用
 - `bufer/cache` 多少内存在读写缓存
 - `swap` 交换分区 windows的虚拟内存
+- `VIRT` 虚拟内存
+- `RES` 保留内存
+- `SHR` 共享内存
 
-```
+```shell
 top
 ```
 

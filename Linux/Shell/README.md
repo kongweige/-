@@ -3,18 +3,18 @@
 ## 执行
 
 chmod u-rx filename 赋予sh文件可执行权限
+```shell
 
-* 系统会另起一个执行进程(不会对当前进程造成影响)
+#系统会另起一个执行进程(不会对当前进程造成影响)
+#用bash运行 （ubuntu 默认bash）
+bash test.sh 
+#用系统自带的运行
+./test.sh
 
-  * 用bash运行 （ubuntu 默认bash）
-    * bash test.sh 
-
-  * 用系统自带的运行
-    * ./test.sh
-
-* 在当前进程执行(会对当前进程造成影响)
-  * source ./test.sh
-  * ./test.sh
+#在当前进程执行(会对当前进程造成影响)
+source ./test.sh
+./test.sh
+```
 
 ## # 注释
 
