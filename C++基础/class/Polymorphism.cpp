@@ -13,7 +13,28 @@ void printValue(double value) {
   std::cout << "double: " << value << std::endl;
 }
 
+// 类中静态多态
+// 函数的调用会根据对象的静态类型来确定，即在编译时就确定了调用哪个函数
+// class A {
+// public:
+//   void show() {
+//     std::cout << "父类A的方法" << std::endl;
+//   }
+// };
 
+// class B : public A {
+// public:
+//   // 即在编译时就确定了调用哪个函数
+//   void show() {
+//     std::cout << "子类B的方法" << std::endl;
+//   }
+// };
+
+// int main() {
+//   B b;
+//   b.show();  // 将调用子类B的show方法
+//   return 0;
+// }
 
 
 /* 动态多态由虚函数实现 */
